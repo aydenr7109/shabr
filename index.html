@@ -11,25 +11,30 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <title>Hello, world!</title>
-
     <style>
       h1{
         color: white;
         position: relative;
-        bottom: 400px;
+        bottom: 260px;
+        font-size: 50px;
       }
       h2{
         position: relative;
-        bottom: 75px;
+        bottom: 100px;
       }
        h3{
         color: white;
         position: relative;
-        bottom: 375px;
+        bottom: 250px;
       }
       p{
         font-size: 20px;
+        font-family: fantasy;
+      }
+      @media(max-width: 500px){
+        p{
+          font-size: 30px;
+        }
       }
     </style>
   </head>
@@ -41,13 +46,41 @@
     </div>
     <div class="container">
       <h2 class="text-center">Home: Fun for Everyone</h2>
-      <p class="position-relative text-center" style="bottom: 65px">Come make a new memory with us. There's nothing else like it.</p>
-      <p class="position-relative text-center" style="bottom: 60px"><strong>Fun for both adults and kids.</strong></p>
-      <p class="position-relative text-center" style="bottom: 60px">All are welcome! Afraid of heights? You won't be after you slow-dance with the sky.</p>
+      <p class="position-relative text-center" style="bottom: 85px">Come make a new memory with us. There's nothing else like it.</p>
+      <p class="position-relative text-center" style="bottom: 80px"><strong>Fun for both adults and kids.</strong></p>
+      <p class="position-relative text-center" style="bottom: 80px">All are welcome! Afraid of heights? You won't be after you slow-dance with the sky.</p>
     </div>
-
     <div class="container">
-      <h4><u>Gallery</u></h4>
+      <h4 class="text-info"><u>Info: All the information you'll need</u></h4>
+      <div class="row">
+        <div class="card col-md-3 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title"><u>Time</u></h5>
+            <p class="card-text">Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call ahead for the exact meeting time.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title"><u>Weather</u></h5>
+            <p class="card-text">High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will allow their balloon flight.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title"><u>Flight</u></h5>
+            <p class="card-text">Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-sm-6">
+          <div class="card-body">
+            <h5 class="card-title"><u>Participation</u></h5>
+            <p class="card-text">We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the fun of the entire ballooning experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h4 class="text-primary"><u>Gallery</u></h4>
       <p>Click here to see pictures of our sight.</p>
       <button class="btn btn-info btn-lg btn-block" data-toggle="collapse" data-target="#Gallery">Press the Button</button>
       <div id="Gallery" class="collapse">
@@ -63,7 +96,7 @@
     </div>
     <br>
     <div class="container">
-      <p>Testimonials: Just a few of our happy customers</p>
+      <h4 class="text-success"><u>Testimonials: Just a few of our happy customers</u></h4>
       <blockquote class="blockquote text-center">
       <p class="mb-0">"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!"</p>
       <footer class="blockquote-footer">-- Joan H</footer>
@@ -97,7 +130,6 @@
       <p style="font-size: 15px;">Somewhere, OT 80013</p>
       <p style="font-size: 15px;">Phone(555) 555-1234</p>
       <p style="font-size: 15px;">Copyright © 2016   |   SHABR</p>
-
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
